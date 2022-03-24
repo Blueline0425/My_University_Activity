@@ -1,0 +1,14 @@
+﻿  test1.c
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(6,9): error C2143: 구문 오류: ')'이(가) '문자열' 앞에 없습니다.
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(6,9): error C2143: 구문 오류: '{'이(가) '문자열' 앞에 없습니다.
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(6,9): error C2059: 구문 오류: '문자열'
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(6,18): error C2059: 구문 오류: ')'
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(10,9): error C2143: 구문 오류: ')'이(가) '문자열' 앞에 없습니다.
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(10,9): error C2143: 구문 오류: '{'이(가) '문자열' 앞에 없습니다.
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(10,9): error C2059: 구문 오류: '문자열'
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(10,16): error C2059: 구문 오류: ')'
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(15,21): error C2099: 이니셜라이저가 상수가 아닙니다.
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(16,9): error C2143: 구문 오류: ')'이(가) '문자열' 앞에 없습니다.
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(16,9): error C2143: 구문 오류: '{'이(가) '문자열' 앞에 없습니다.
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(16,9): error C2059: 구문 오류: '문자열'
+C:\Users\한웅재\Desktop\Programing\Project1\Project1\test1.c(16,20): error C2059: 구문 오류: ')'

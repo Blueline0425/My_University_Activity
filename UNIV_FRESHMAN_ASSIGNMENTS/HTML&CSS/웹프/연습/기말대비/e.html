@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            div { background-color:#D94A38; color:white; width:120px; height:20px; padding:40px; }
+            </style>
+    </head>
+    <body>
+<h2 id="heading">JS EX</h2>
+<h3 id="ex1">EX 1</h3><a id="a1" name="EX1"/>
+<p>Change the following image to a grape whose width is 300.</p>
+<img id="img1" src="apple.png" width="200">
+<script>
+// Add your code here.. (Exercise 10.1.1)
+ function ex1(){var x=document.getElementById("heading");
+  x.innerHTML="javascript exercise 10.1";
+  var y=document.getElementById("ex1");
+  y.innerHTML="exercise 1";
+  var z=document.getElementById("img1");
+  
+  z.width="300";
+ }
+</script>
+<h3 id="ex2">Exercise 2</h3>
+<p>Go to <a href="#EX1">Exercise 1</a>.<br/>
+The name of anchor "a1" is: <span id="sp1"></span></p>
+<script>
+    function ex2(){
+// Add your code here.. (Exercise 10.1.2)
+var a=document.getElementById("sp1");
+var b=document.getElementById("a1");
+a.innerHTML=b.name;
+var c=document.getElementById("ex2");
+c.style.color="red";
+c.style.fontStyle="italic";
+    }
+</script>
+<input type="button" onclick="ex1()">
+<input type="button"onclick="ex2()">
+<div onmousedown="down(this)"onmouseup="up(this)">Press here</div>
+<script>
+    function down(elem){
+        elem.style.backgroundColor="#1ec5e5";
+        elem.innerHTML="Release mouse";
+
+    }
+    function up(elem){
+        elem.style.backgroundColor="#D94A38";
+        elem.innerHTML="Press here";
+
+    }
+</script>
+</body>
+</html>

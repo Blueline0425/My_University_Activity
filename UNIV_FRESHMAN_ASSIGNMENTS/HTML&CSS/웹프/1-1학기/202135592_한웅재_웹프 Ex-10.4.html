@@ -1,0 +1,49 @@
+<html>
+ <head>
+  
+ </head>
+ <body>
+  <h3>Create Account</h3>
+  <form name="f">
+  
+	Your name:<input type="text" name="name"><br>
+	Email:<input type="text" name="email"><br>
+	Email again:<input type="text" name="re_email"><br>
+	Mobile phone:<input type="text" name="phone">
+	<p id="a"style="color:red;"></p>
+    <br><br>
+	<input type="button"name="b"value="Create"onclick="valdidate()">
+  
+  </form>
+  <script>
+    function valdidate(form){
+		if(validateEmail(document.f.email.value)!=true){
+			document.getElementById("a").innerHTML="Enter correct e-mail address.";
+			
+		}
+		if(document.f.email.value!=document.f.re_email.value){
+			document.getElementById("a").innerHTML="Enter correct e-mail again address.";
+		}
+		if(validatePhone(document.f.phone.value)!=true){
+			document.getElementById("a").innerHTML="Enter correct phone number.";
+			
+		}
+		if((validateEmail(document.f.email.value)==true)&&(validatePhone(document.f.phone.value)==true)&&(document.f.email.value==document.f.re_email.value)){
+			document.getElementById("a").innerHTML="";}
+    }
+	function validateEmail(address) {
+    var rex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	var res = rex.test(address);
+	console.log(address + " -> " + res);
+	return res;
+}
+
+function validatePhone(phone) {
+	var rex = /^([0-9]{3})[-]?([0-9]{3,4})[-]?([0-9]{4})$/;
+	var res = rex.test(phone);
+	console.log(phone + " -> " + res);
+	return res;
+}
+	</script>
+ </body>
+</html>

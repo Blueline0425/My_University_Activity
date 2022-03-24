@@ -1,0 +1,46 @@
+<html>
+ <head>
+  
+ </head>
+ <body>
+ <script>
+  var A=[1,2,3,5,8,13,21,34,55,89];
+  var counter,x=" ";
+  for(counter in A)
+      {
+		  if(counter==5){
+			x+="<br>"+"<br>"+"You have exited the loop.";
+			break;
+		  }
+
+         x+=A[counter]+" ";
+	  
+	  }
+	  document.write(x);
+
+	  document.write("<br>");
+	  document.write("<br>");
+
+  var y=" ";
+     for (counter in A)
+     {
+		 if(counter==2||counter==3||counter==5){
+			
+			continue;
+		 }
+		 y+=A[counter]+" ";
+		 if(counter==9)
+			{
+		      y+="<br>"+"<br>"+"You have exited the loop.";
+			}
+
+     }
+	 document.write(y);
+
+
+
+
+ </script>
+  
+ </body>
+</html>

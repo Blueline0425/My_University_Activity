@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+  #div1{ width:10cm; 
+         border : solid; 
+		 background-color:silver;
+         padding-top:10px;
+		 padding-left:5px;
+		 font:italic bold 50pt Times New Roman;}
+  #div2{ border: dotted red; 
+         background-color:#20a020;
+         padding: 20px 30px 40px 50px;
+		 margin: 20px 30px 20px 10px;}
+
+
+
+  </style>
+
+ </head>
+
+ <body>
+  <div id="div1">div1
+
+    <div id="div2">div2
+	</div>
+  
+  </div>
+
+
+
+
+
+
+
+ </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+ <head>
+ <script>
+function println(value){ 
+	 if (value != undefined) document.write(value);
+     document.write("<br>");
+	 }
+</script>
+  
+ </head>
+ <body>
+ <script>
+    var str1="Objects combine data with actions to create a new data type!"
+	
+    println(str1.length);
+	var str2 = str1.split(" ");
+	println(str2);
+	str2.pop();
+	str2.pop();
+	str2.push("class!");
+	println(str2);
+	println(str2.join("+"));
+
+
+ </script>
+  
+ </body>
+</html>

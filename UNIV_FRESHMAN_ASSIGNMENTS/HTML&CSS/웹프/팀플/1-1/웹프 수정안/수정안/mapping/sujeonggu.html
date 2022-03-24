@@ -1,0 +1,141 @@
+<html lang="EN">
+
+<head>
+    <title>My restaurant Diary</title>
+    <META charset="UTF-8">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Bebas+Neue&family=Caveat:wght@400;500;600&&family=Handlee&family=Montserrat:wght@300&family=PT+Sans+Narrow&family=Pangolin&family=Pattaya&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@1,300;1,400&family=Patrick+Hand&family=Caveat+Brush&family=Kalam:wght@300;400&display=swap');
+
+        @import url('../style/mainStyle.css');
+
+        @import url('../style/menuStyle.css');
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            padding: 10px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../main.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <script>
+
+        function println(value) {
+
+            if (value != undefined) document.write(value);
+            document.write("<br>");
+
+        }
+    </script>
+</head>
+
+<body>
+    <div style="text-align: center">
+        <div class="header">
+            <h1>My restaurant Diary</h1>
+            <p>make your diary</p>
+        </div>
+    </div>
+    <section class="blurry-menu">
+        <ul>
+            <li><a href="../Main.html">Main</a></li>
+            <li><a href="../rating/rating.html">Rating</a></li>
+            <li><a href="../categorize/ca1.html">Categorizing</a></li>
+            <li><a href="mapping.html">Mapping</a></li>
+        </ul>
+    </section>
+    <div class="contents">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Mapping</h2>
+                <h3>Sujeounggu</h3>
+                <form>
+                    <select onchange="if(this.value) window.open(this.value);" name="seongnam">
+                        <option value>SEONGNAM-SI</option>
+                        <option value="bundang.html">BUNDANG-GU</option>
+                        <option value="sujeonggu.html">SUJEONG-GU</option>
+                        <option value="jungwonggu.html">JUNGWON-GU</option>
+                    </select>
+                </form>
+                <div id="map" style="width:100%;height:450px;"></div>
+
+                <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ceb4c80afbee639b701a5b08fb75a6f2"></script>
+                <script>
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = {
+                            center: new kakao.maps.LatLng(37.44957289737411, 127.12792587754379), // 지도의 중심좌표
+                            level: 4, // 지도의 확대 레벨
+                            mapTypeId: kakao.maps.MapTypeId.ROADMAP // 지도종류
+                        };
+
+                    // 지도를 생성한다 
+                    var map = new kakao.maps.Map(mapContainer, mapOption);
+
+
+                    var positions = [
+                        {
+                            title: '오르막 커피',
+                            latlng: new kakao.maps.LatLng(37.453500861885644, 127.12728640882304)
+                        },
+                        {
+                            title: '쩡이네 포차',
+                            latlng: new kakao.maps.LatLng(37.44804804338491, 127.12736708683263)
+                        },
+                        {
+                            title: '와플대학',
+                            latlng: new kakao.maps.LatLng(37.448834351825056, 127.12703903377795)
+                        },
+                        {
+                            title: '신의 한 컵',
+                            latlng: new kakao.maps.LatLng(37.44965250592423, 127.12933939787025)
+                        }];
+
+                    var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
+
+                    for (var i = 0; i < positions.length; i++) {
+
+                        // 마커 이미지의 이미지 크기 입니다
+                        var imageSize = new kakao.maps.Size(24, 35);
+
+                        // 마커 이미지를 생성합니다    
+                        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
+
+                        // 마커를 생성합니다
+                        var marker = new kakao.maps.Marker({
+                            map: map, // 마커를 표시할 지도
+                            position: positions[i].latlng, // 마커를 표시할 위치
+                            title: positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+                            image: markerImage // 마커 이미지 
+                        });
+                    }
+
+
+                </script>
+</body>
+</div>
+</div>
+<div class="rightcolumn">
+    <div class="card" style="height: 500px">
+        <h2>Map Widget</h2>
+        <h5>Click the map and Search Quickly!</h5>
+        <div>
+            <a href="https://goo.gl/maps/Drh5A2EworcA1SPV7"
+                onclick="window.open(this.href, '_blank', 'width=400px, height=400px'); return false;"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12669.385407694574!2d127.12387073093385!3d37.45254351151316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1622312588438!5m2!1sko!2skr"
+                    width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></a>
+        </div>
+    </div>
+</div>
+</div>
+<div style="text-align: right">
+    <div class="footer">
+        <p><b>Web Programming Group C</b> &nbsp; &nbsp; : &nbsp; &nbsp;
+            202037634 Jueun Yoon &nbsp; &nbsp; / &nbsp; &nbsp;202135539 Jiyoung Park <br> / &nbsp; &nbsp;
+            202135553 Sehyeoun Yoon &nbsp; &nbsp; / &nbsp; &nbsp;202135592 Ungjae Han
+            <br>last modified | May 30, 2021
+        </p>
+    </div>
+</div>
+</body>
+
+</html>

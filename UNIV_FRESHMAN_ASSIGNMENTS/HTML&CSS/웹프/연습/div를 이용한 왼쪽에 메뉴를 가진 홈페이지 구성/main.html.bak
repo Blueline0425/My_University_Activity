@@ -1,0 +1,64 @@
+<html>
+ <head>
+  
+  <style>
+        body {font: 15px times new roman;} 
+      a:link {color:black;}
+	  a:visited {color:purple;}
+	  a:hover {color:black;}
+       #top {vertical-align:middle; font:bold 30px times new roman; }
+	   #mid_l {float:left; background-color:ffdfdd;margin:10px 30px 5px 10px;}
+	   #mid_l a {display:block; text-decoration:none; padding:5px 10px 5px 10px; }
+       #mid {border:black solid ;border-width:2px 0 2px 0; background-color:fcdfff;}
+
+	   #mid_r {display:inline-block;}
+	   #bot {font-style:italic; font-size:small; text-align:right; }
+
+	   @media print {#mid_l {display:none;}}
+  </style>
+  
+ </head>
+ <body>
+     <div id="top">My restaurant diary
+	 </div>
+
+
+
+	 <div id="mid">
+	      <div id="mid_l">
+              <a href="www.google.kr">EX1234</a>
+			  <a href="www.google.kr">EX1234</a>
+			  <a href="www.google.kr">EX1234</a>
+			  <a href="www.google.kr">EX1234</a>
+
+
+		  </div>
+		  <div id="mid_r">
+		  <h3>EX</h3>
+		   <ul>
+		      <li><a href="www.google.kr">Q</a></li>
+			  <li><a href="www.google.kr">W</a></li>
+			  <li><a href="www.google.kr">E</a> </li>
+			  <li><a href="www.google.kr">R</a> </li>
+		  </ul>
+
+		  <h3>EX</h3>
+		   <ul>
+		      <li><a href="www.google.kr">D</a> </li>
+			  <li><a href="www.google.kr">F</a> </li>
+			  
+		  </ul>		
+
+ 
+
+		  </div>
+    </div>
+	<div id="bot">
+          1234<BR> ABCD
+
+	</div>
+
+
+  
+ </body>
+</html>

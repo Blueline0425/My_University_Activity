@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            function bool(a){
+
+                return !(isNaN(a));
+            }
+            function f(a,b){
+                var d=Number(a)+Number(b);
+                return String(d);
+            }
+
+        </script>
+    </head>
+    <body>
+        
+     <script>
+         
+        true||alert("A");
+        false||alert("B");
+        true&&alert("C");
+        false&&alert("D");
+        var A=[1,2,3,5,8,13,21,34,55,89];
+        for(count in A){
+            if(count==2||count==3||count==5)
+                continue;
+            document.write(A[count]+" ");
+            
+        }
+        var a="fdf";
+         b=bool(a);
+         alert(b);
+         var b=prompt();
+         var c=prompt();
+         alert(f(b,c));
+         alert(typeof(f(b,c)));
+
+
+
+     </script>
+
+
+    </body>
+</html>

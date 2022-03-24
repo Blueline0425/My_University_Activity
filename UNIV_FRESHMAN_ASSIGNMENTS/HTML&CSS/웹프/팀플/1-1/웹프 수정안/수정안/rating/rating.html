@@ -1,0 +1,215 @@
+<html lang="EN">
+
+<head>
+    <title>My restaurant Diary</title>
+    <META charset="UTF-8">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Bebas+Neue&family=Caveat:wght@400;500;600&&family=Handlee&family=Montserrat:wght@300&family=PT+Sans+Narrow&family=Pangolin&family=Pattaya&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@1,300;1,400&family=Patrick+Hand&family=Caveat+Brush&family=Kalam:wght@300;400&display=swap');
+
+        @import url('../style/mainStyle.css');
+
+        @import url('../style/menuStyle.css');
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            padding: 10px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../main.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <script>
+        function println(value) {
+
+            if (value != undefined) document.write(value);
+            document.write("<br>");
+
+        }
+    </script>
+</head>
+
+<body>
+    <div style="text-align: center">
+        <div class="header">
+            <h1>My restaurant Diary</h1>
+            <p>make your diary</p>
+        </div>
+    </div>
+    <section class="blurry-menu">
+        <ul>
+            <li><a href="../Main.html">Main</a></li>
+            <li><a href="rating.html">Rating</a></li>
+            <li><a href="../categorize/ca1.html">Categorizing</a></li>
+            <li><a href="../mapping/mapping.html">Mapping</a></li>
+        </ul>
+    </section>
+    <div class="contents">
+        <div class="leftcolumn">
+            <div class="card table">
+                <h2>RATING</h2>
+                <h5>Enter restaurant name, local, kind, review and rating!</h5>
+
+                <div id="d1 row">
+                    <div class="ratingmenu cell col1">
+                        <form method="get" name="rating_system">
+                            <p>name
+                                <input type="text" value="enter the name" name="name" onclick="namereset(this)">
+
+                                <br>
+
+                                location
+                                <select name="location">
+
+                                    <option value="Seoul">Seoul
+                                    <option value="Busan">Busan
+                                    <option value="Gwang ju">Gwangju
+                                    <option value="gyeongju">gyeongju
+                                    <option value="gyeonggido">gyeonggido
+                                        <!--���߰��ҿ���-->
+                                </select>
+
+                                <br>
+
+                                nation
+                                <select name="nation">
+                                    <option value="Korean">Korean food
+                                    <option value="western">western food
+                                    <option value="Chinese">Chinese food
+                                    <option value="Japanese">Japanese food
+                                    <option value="thai">Thai food
+                                    <option value="European">European food
+                                    <option value="Indian">Indian food
+                                    <option value="German">German food
+                                    <option value="Russian">Russian food
+                                    <option value="Franch">Franch food
+                                    <option value="Asian">Asian food
+                                        <!--���߰��ҿ���-->
+                                </select>
+
+                                <br>
+
+                                point(max is 5)
+                                1<input type="radio" value="1" name="score">
+                                2<input type="radio" value="2" name="score">
+                                3<input type="radio" value="3" name="score">
+                                4<input type="radio" value="4" name="score">
+                                5<input type="radio" value="5" name="score">
+
+
+                                <br>
+
+                                comments
+                                <br>
+                                <textarea rows="4" cols="40" name="comments">
+                    </textarea>
+
+                                <br>
+                                <input type="button" value="submit" onclick="submitdata()">
+
+                                <input type="reset" value="reset">
+
+                        </form>
+                    </div>
+                </div>
+                <div id="d2">
+                    <div class="display cell col2">
+                        this area is showing the data from form.
+
+                        <script>
+
+                            var x = 0;
+                            var score = [];
+                            var reviewName = [];
+                            var reviewLocation = [];
+                            var reviewNation = [];
+                            var reviewComments = [];
+                            var text = "";
+
+                            function submitdata() {
+
+                                var radioButtons = document.getElementsByName("score");
+                                for (var i = 0; i < radioButtons.length; i++) {
+                                    if (radioButtons[i].checked) {
+										score[x]="";
+										   for(var k=0; k<=i ; k++)
+										   { 
+											   
+											   score[x] += "⋆";}
+                                    }
+                                }
+
+                                reviewName[x] = document.rating_system.name.value;
+                                reviewLocation[x] = document.rating_system.location.value;
+                                reviewNation[x] = document.rating_system.nation.value;
+                                reviewComments[x] = document.rating_system.comments.value;
+
+
+
+
+
+
+
+
+                                displaydata()
+                                x++;
+                            }
+                            function displaydata() {
+
+
+
+                                text += "<br>" + reviewName[x] + "<br>" + reviewLocation[x] + "<br>" + reviewNation[x] + "<br>" + score[x] + "<br>" + reviewComments[x]+ "<br>";
+                                document.getElementById("a").innerHTML = text;
+
+                            }
+
+                        </script>
+
+                        <p id="a"></p>
+                    </div>
+
+                    <script>
+
+
+                        //form�� array�� �����ϴ� ���
+                        function namereset(elem) {
+                            elem.value = "";
+                            //name Ŭ���� ���ó���or���� ���������� ��
+                        }
+
+
+
+
+
+
+
+
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card" style="height: 500px">
+                <h2>Map Widget</h2>
+                <h5>Click the map and Search Quickly!</h5>
+                <div>
+                    <a href="https://goo.gl/maps/Drh5A2EworcA1SPV7"
+                        onclick="window.open(this.href, '_blank', 'width=400px, height=400px'); return false;"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12669.385407694574!2d127.12387073093385!3d37.45254351151316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1622312588438!5m2!1sko!2skr"
+                            width="100%" height="300px" style="border:0;" allowfullscreen=""
+                            loading="lazy"></iframe></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: right">
+        <div class="footer">
+            <p><b>Web Programming Group C</b> &nbsp; &nbsp; : &nbsp; &nbsp;
+                202037634 Jueun Yoon &nbsp; &nbsp; / &nbsp; &nbsp;202135539 Jiyoung Park <br> / &nbsp; &nbsp;
+                202135553 Sehyeoun Yoon &nbsp; &nbsp; / &nbsp; &nbsp;202135592 Ungjae Han
+                <br>last modified | May 30, 2021
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

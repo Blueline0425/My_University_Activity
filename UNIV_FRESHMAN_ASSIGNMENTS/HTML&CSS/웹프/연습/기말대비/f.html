@@ -1,0 +1,15 @@
+<body onload="setDate()">
+    <!‐‐ Runs setDate() once when the document has been loaded ‐‐>
+    <script>
+    var myDate; // an interval variable; needed when stopping
+    function setDate() {
+    var now = new Date();
+    document.getElementById("sp1").innerHTML = now;
+    }
+    </script>
+    <p>Current time: <span id="sp1"></span></p>
+    <button onclick="myDate = setInterval('setDate()', 500)">Start</button>
+    <!‐‐ Runs setDate() every 500 milliseconds (0.5 seconds) ‐‐>
+    <button onclick="clearInterval(myDate)">Stop</button>
+    <!‐‐ Stops executions of setDate() function ‐‐>
+    </body>

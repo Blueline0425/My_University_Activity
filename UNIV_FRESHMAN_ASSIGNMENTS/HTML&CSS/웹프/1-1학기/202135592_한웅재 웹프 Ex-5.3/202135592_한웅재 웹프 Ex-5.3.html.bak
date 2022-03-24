@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>My Home Page</title>
+ <style type="text/css">
+  a:link{color:navy;}
+  a:visited {color:purple;}
+  a:hover {color:red;} 
+
+ #top img {width:150px; height:90px;vertical-align:middle; margin: 0 10px 0 0; }
+	 
+	  
+	  #top {margin:0 0 5px 0;  color:blue;font:italic bold 40pt times new roman;
+	        border: solid; }
+	 
+
+
+
+
+   #middle { border: solid gray;border-width:2px 0 2px 0;}
+  #middle_left {background: #cfcfff; margin: 5px 0 0 0;padding:5px 5px 5px 5px; 
+  float:left;
+  border: solid;}
+  #middle_left a {display:block;}
+  #middle_right {margin:0 0 0 0px; 
+  display:inline-block;
+  border: solid;}
+
+
+
+
+  #bottom {font:italic small; text-align:right;border: solid;}
+  .link{padding: 3px 0 3px 0; 
+  
+   text-decoration:none;}
+ 
+
+
+
+   @media print { img {display:none; } 
+                  #middle_left {display:none;}	
+                   #middle_right {margin:0 0 0 0;}
+   
+   
+   }
+
+ </style>
+
+ </head>
+ <body>
+  <div id="top">
+   <img src="mountain.jpg">My Home Page
+  </div>
+
+  <div id="middle">
+     <div id="middle_left">
+	 <a href="https://www.naver.com/"class="link">Home</a>
+	 <a href="https://www.ebs.co.kr"class="link">Education</a>
+	 <a href="https://www.samsungsvc.co.kr/"class="link">Services</a>
+	 <a href="http://www.book.co.kr/essay_ver2/index.php"class="link">Publication</a>
+     </div>
+	 <div id="middle_right">
+	 <h3>My Favorite Sites:</h3>
+	 <ul>
+	    <li><a href="https://www.naver.com/">Naver</a></li>
+		<li><a href="https://www.google.com/">Google</a></li>
+		<li><a href="https://www.youtube.com/">Youtube</a></li>
+		<li><a href="https://www.daum.net/">Daum</a></li>
+	 </ul>
+	  <h3>Helpful Resources:</h3>
+	  <ul>
+	    <li><a href="https://cafe.naver.com/gachon2010">Gachon SW Cafe</a></li>
+		<li><a href="https://everytime.kr/">Everytime</a></li>
+	  </ul>
+     </div>
+  </div>
+
+  <div id="bottom">
+  <br>
+    Last modified on Sept.29,2014.<br>
+	Managed by me
+  </div>
+
+
+
+ </body>
+</html>

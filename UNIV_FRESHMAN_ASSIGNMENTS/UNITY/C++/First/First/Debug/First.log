@@ -1,0 +1,11 @@
+﻿  First.c
+C:\Users\한웅재\Desktop\C++\First\First\First.c(14,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\한웅재\Desktop\C++\First\First\First.c(25,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\한웅재\Desktop\C++\First\First\First.c(41,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\한웅재\Desktop\C++\First\First\First.c(43,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\한웅재\Desktop\C++\First\First\First.c(45,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\한웅재\Desktop\C++\First\First\First.c(71,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\한웅재\Desktop\C++\First\First\First.c(76,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\한웅재\Desktop\C++\First\First\First.c(89,1): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\한웅재\Desktop\C++\First\First\First.c(114,33): warning C4101: 'mark' :참조되지 않은 지역 변수입니다.
+  First.vcxproj -> C:\Users\한웅재\Desktop\C++\First\Debug\First.exe

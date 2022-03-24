@@ -1,0 +1,13 @@
+a:link{color:black;}
+	  a:visited{color:white;}
+	  #left_nav a:hover{color:purple;}
+	    #top img {width:150px; height:100px;vertical-align:middle;}
+		#content img {width:300px; height:100px; float:left; display:block;}
+	    #top{margin: 0 0 5px 0; vertical-align:middle; color:black; font:italic bold 50pt Times New Roman;text-decoration:underline;}
+        #mid {border: solid gray;border-width: 10px 0 3px 0; margin: 5px 0 0 0;display:block;}
+		#left_nav{background:gray;  float:left;}
+        .link {display:block;padding:3px 3px 3px 20px; text-decoration:none;}
+		#content{margin:0 0 100px 134px; border:solid gray; border-width:0 10px 1px 2px; background: white url("exynos.jpg") normal; }
+        #bottom {display:block;font-style:italic; font-size:small; text-align:right;}
+		#title {font-style:italic; font-size:40px;}
+		

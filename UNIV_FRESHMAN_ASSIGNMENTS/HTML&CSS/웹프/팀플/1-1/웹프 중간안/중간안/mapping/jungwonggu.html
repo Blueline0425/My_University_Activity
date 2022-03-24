@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jungwon-gu</title>
+</head>
+<body>
+	<div id="map" style="width:750px;height:450px;"></div>
+
+	<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ceb4c80afbee639b701a5b08fb75a6f2"></script>
+	<script>
+		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+		    mapOption = {
+		        center: new kakao.maps.LatLng(37.441422396905125, 127.1690736989735), // 지도의 중심좌표
+		        level: 4, // 지도의 확대 레벨
+		        mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+		    }; 
+
+		// 지도를 생성한다 
+		var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+				
+			var positions = [
+			{
+        title: '궁전 생고기', 
+        latlng: new kakao.maps.LatLng(37.44053369696325, 127.17274359878243)
+    },
+    {
+        title: '행복 식당', 
+        latlng: new kakao.maps.LatLng(37.44119628800989, 127.17206236023063)
+    },
+    {
+        title: '특급식당', 
+        latlng: new kakao.maps.LatLng(37.44189267839846, 127.17156846228056)
+    },
+    {
+        title: '명가 족발 보쌈',
+        latlng: new kakao.maps.LatLng(37.44247964102545, 127.16565138878546)
+    }];
+		
+		var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png"; 
+    
+for (var i = 0; i < positions.length; i ++) {
+    
+    // 마커 이미지의 이미지 크기 입니다
+    var imageSize = new kakao.maps.Size(24, 35); 
+    
+    // 마커 이미지를 생성합니다    
+    var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize); 
+    
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        map: map, // 마커를 표시할 지도
+        position: positions[i].latlng, // 마커를 표시할 위치
+        title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+        image : markerImage // 마커 이미지 
+    }); 
+	}
+	</script>
+</body>
+</html>

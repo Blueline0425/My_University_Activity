@@ -1,0 +1,31 @@
+<script>
+    var now=new Date(), then=new Date();
+    document.write(now);
+    then.setDate(now.getDate()+2);
+    then.setHours(now.getHours()+13);
+    then.setMinutes(now.getMinutes()+24);
+    document.write(then);
+
+    alert(Math.E);
+
+    var x= new Date();
+    document.write("<br>"+x.toString());
+    x.setDate(x.getDate()+5);
+    x.setHours(x.getHours()+3);
+    x.setMinutes(x.getMinutes()+25);
+    document.write("<br>"+x);
+    x.setHours(x.getHours()+26);
+    x.setMinutes(x.getMinutes()+78);
+    document.write("<br>"+x.getDay());
+    document.write("<br>"+Math.max(Math.E,Math.LN2 ,Math.LN10 ,Math.LOG2E ,Math.LOG10E ,Math.PI ,Math.SQRT1_2,Math.SQRT2))
+    document.write("<br>"+Math.min(Math.E,Math.LN2 ,Math.LN10 ,Math.LOG2E ,Math.LOG10E ,Math.PI ,Math.SQRT1_2,Math.SQRT2))
+    document.write("<br>"+Math.round(Math.max(Math.E,Math.LN2 ,Math.LN10 ,Math.LOG2E ,Math.LOG10E ,Math.PI ,Math.SQRT1_2,Math.SQRT2)))
+    document.write("<br>"+Math.round(Math.min(Math.E,Math.LN2 ,Math.LN10 ,Math.LOG2E ,Math.LOG10E ,Math.PI ,Math.SQRT1_2,Math.SQRT2)))
+    
+document.write("Current url is: " + location.href + "<br/>");
+function jump() {
+location.assign("http://www.naver.com/");
+location.href="http://www.naver.com/"; // does the same
+}
+</script>
+<input type="button" value="Jump to Naver" onclick="jump()"/>

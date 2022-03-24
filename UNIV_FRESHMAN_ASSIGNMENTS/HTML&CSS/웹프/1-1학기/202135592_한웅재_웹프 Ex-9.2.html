@@ -1,0 +1,57 @@
+<html>
+ <head>
+   <script>
+function println(value){ 
+	 if (value != undefined) document.write(value);
+     document.write("<br>");
+	 }
+</script>
+  
+ </head>
+ <body>
+    <script>
+	  var now= new Date();
+      println(now.toString());
+
+	  now.setDate(now.getDate()+5);
+	  now.setHours(now.getHours()+3);
+	  now.setMinutes(now.getMinutes()+25);
+	  println(now.toString());
+
+	  now.setHours(now.getHours()+26);
+	  now.setMinutes(now.getMinutes()+78);
+	  println(now.toString());
+
+       
+	  if(now.getDay()==1)
+	        {println("Monday");}
+	         else if(now.getDay()==2)
+	         {println("Tuesday");}
+			 else if(now.getDay()==3)
+	         {println("Wednesday");}
+			 else if(now.getDay()==4)
+	         {println("Thursday");}
+			 else if(now.getDay()==5)
+	         {println("Friday");}
+			 else if(now.getDay()==6)
+	         {println("Saturday");}
+			 else if(now.getDay()==0)
+	         {println("Sunday");}
+
+
+    println(Math.max(Math.E,Math.LN2 ,Math.LN10 ,Math.LOG2E ,Math.LOG10E ,Math.PI ,Math.SQRT1_2,Math.SQRT2) );
+	println(Math.min(Math.E,Math.LN2 ,Math.LN10 ,Math.LOG2E ,Math.LOG10E ,Math.PI ,Math.SQRT1_2,Math.SQRT2));
+    
+	println(Math.round(Math.E));
+	println(Math.round(Math.LN2));
+	println(Math.round(Math.LN10));
+	println(Math.round(Math.LOG2E));
+	println(Math.round(Math.LOG10E));
+	println(Math.round(Math.PI));
+	println(Math.round(Math.SQRT1_2));
+	println(Math.round(Math.SQRT2));	
+
+	</script>
+  
+ </body>
+</html>

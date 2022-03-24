@@ -1,0 +1,64 @@
+<html>
+ <head>
+
+<style>
+#d1 { background-color:#D94A38; color:white;  width:120px; height:20px; padding:40px; }
+</style>
+
+ </head>
+ <body>
+
+
+  <h2 id="heading">JS EX</h2>
+<h3 id="ex1">EX 1</h3><a id="a1" name="EX1"/>
+<p>Change the following image to a grape whose width is 300.</p>
+<img id="img1" src="apple.png" width="200">
+
+
+
+
+
+<h3 id="ex2">Exercise 2</h3>
+<p>Go to <a href="#EX1">Exercise 1</a>.<br/>
+The name of anchor "a1" is: <span id="sp1"></span></p>
+
+<input type="button" id="b1" value="Exercise 1">
+<input type="button" id="b2" value="Exercise 2">
+<div id="d1" onmousedown="mousedown(this)"  onmouseup="mouseup(this)">
+Press here</div>
+
+<script>
+// Add your code here.. (Exercise 10.1.1)
+  var n=document.getElementById("b1");
+  n.onclick=function Ex1(){
+  var x=document.getElementById("heading");
+  x.innerHTML="JavaScript Exercise 10.1";
+  var y=document.getElementById("ex1");
+  y.innerHTML="Exercise1";
+  var z=document.getElementById("img1");
+  z.src="grape.png";
+  z.width="300";
+  }
+
+// Add your code here.. (Exercise 10.1.2)
+var m=document.getElementById("b2");
+m.onclick=function Ex2(){
+var k=document.getElementById("a1");
+document.getElementById("sp1").innerHTML=k.name;
+var v=document.getElementById("ex2");
+
+v.style.color="red";
+v.style.fontStyle="italic";
+}
+
+function mousedown(elem) {elem.innerHTML="Release mouse";
+elem.style.backgroundColor="#1ec5e5";}
+function mouseup(elem){elem.innerHTML="Press here";
+elem.style.backgroundColor="#d94a38";}
+</script>
+
+
+
+  
+ </body>
+</html>

@@ -1,0 +1,258 @@
+<html lang="EN">
+    <head>
+        <title>My restaurant Diary</title>
+        <META charset="UTF-8">
+        <style type="text/css">
+          @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;500;600&&family=Handlee&family=Montserrat:wght@300&family=PT+Sans+Narrow&family=Pangolin&family=Pattaya&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@1,300;1,400&family=Patrick+Hand&family=Caveat+Brush&family=Kalam:wght@300;400&display=swap');
+
+          @import url('button\ style.css');
+
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: 'Roboto Condensed', sans-serif;
+                padding: 10px;
+                background: #f1f1f1;
+            }
+
+            .header {
+                padding: 30px;
+                text-align: center;
+                background: white;
+            }
+            .header h1{
+                font-size: 50px;
+                font-family: 'Pattaya', sans-serif;
+            }
+
+            .contents:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            .leftcolumn {
+                float: left;
+                width: 75%;
+            }
+
+            .rightcolumn {
+                float: left;
+                width: 25%;
+                padding-left: 20px;
+            }
+
+            .card {
+                background-color: white;
+                padding: 20px;
+                margin-top:20px;
+            }
+
+            .card h2 {
+                font-family: 'Bebas Neue', cursive;
+                font-size: 30px;
+            }
+
+            .card p {
+                font-family: 'Kalam', cursive;
+                font-size: 20px;
+            }
+
+            .footer {
+                padding: 30px;
+                text-align: center;
+                background: #ddd;
+                margin-top: 20px;
+            }
+
+            @media screen and (max-width: 800px) {
+                .leftcolumn, .rightcolumn {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            @media screen and (max-width: 400px) {
+                nav {
+                    display: none;
+                }
+            }
+        </style>
+		<style>
+  #d1 {border:solid black;border-width:2px;}
+ </style>
+
+<script>
+function println(value){
+
+	 if (value != undefined) document.write(value);
+     document.write("<br>");
+
+	 }
+
+ </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>My restaurant Diary</h1>
+            <p>make your diary</p>
+        </div>
+        <section class="blurry-menu">
+            <ul>
+              <li><a href="#">Main</a></li>
+              <li><a href="#">Rating</a></li>
+              <li><a href="#">Categorizing</a></li>
+              <li><a href="#">Mapping</a></li>
+            </ul>
+          </section>
+        <div class="contents">
+            <div class="leftcolumn">
+            <div class="card">
+                <h2>MAIN PAGE</h2>
+                <h5>Page description</h5>
+                <div class="fakeimg" style="height:200px">Image</div>
+                <p>Rating text</p>
+                <p>I like food! <br> Do you like Food?</p>
+				 
+
+<div id="d1">
+rating menu
+<form method="get" name="rating_system">
+name
+<input type="text" value="enter the name" name="name" onclick="namereset(this)">
+
+
+location
+<select name="location">
+
+<option value="Seoul">Seoul
+<option value="Busan">Busan
+<option value="Gwang ju">Gwangju
+<option value="gyeongju">gyeongju
+<option value="gyeonggido">gyeonggido
+<!--더추가할예정-->
+</select>
+nation
+<select name="nation">
+<option value="Korea">Korea
+<option value="U.S.A">U.S.A
+<option value="China">China
+<option value="Japan">Japan
+<option value="Taiwan">Taiwan
+<option value="Europe">Europe
+<option value="India">India
+<option value="Germany">Germany
+<option value="Russia">Russia
+<option value="France">France
+<!--더추가할예정-->
+</select>
+point(max is 5)
+1<input type="radio" value="1" name="score">
+2<input type="radio" value="2" name="score">
+3<input type="radio" value="3" name="score">
+4<input type="radio" value="4" name="score">
+5<input type="radio" value="5" name="score">
+
+comments
+<textarea rows="4"cols="40"name="comments">
+</textarea>
+
+<input type="button" value="submit" onclick="submitdata()">
+
+<input type="reset" value="reset">
+
+</form>
+</div>
+
+<div id="d2">
+ this area is showing the data from form.
+ 
+ <script>
+ 
+  var x=0;
+  var score=[];
+  var reviewName=[];
+  var reviewLocation=[];
+  var reviewNation=[];
+  var reviewComments=[];
+  var text="";
+  
+  function submitdata(){
+       
+  var radioButtons = document.getElementsByName ( "score");
+          for (var i = 0; i <radioButtons.length; i ++) {
+    if (radioButtons [i] .checked) {
+        score[x]=radioButtons [i] .value;
+       }
+     }
+	
+	reviewName[x]=document.rating_system.name.value;
+	reviewLocation[x]=document.rating_system.location.value;
+	reviewNation[x]=document.rating_system.nation.value;
+	reviewComments[x]=document.rating_system.comments.value;
+	
+	//출력확인
+	alert(reviewName[x]);
+	alert(reviewLocation[x]);
+	alert(reviewNation[x]);
+	alert(score[x]);
+	alert(reviewComments[x]);
+    //
+
+	alert(x);
+	
+	
+    
+
+	displaydata()
+     x++;
+	}
+	function displaydata(){
+		
+		
+		
+			text+="<br>" +reviewName[x]+"<br>" +reviewLocation[x]+"<br>" +reviewNation[x]+"<br>" + score[0]+"<br>"+reviewComments[x];
+		document.getElementById("a").innerHTML = text;
+ 
+	}
+ 
+ </script>
+
+<p id="a"></p>
+</div>
+
+<script>
+
+  
+//form을 array에 저장하는 방식
+  function namereset(elem){
+	elem.value="";
+	//name 클릭시 예시내용or내용 지워지도록 함
+  }
+
+
+
+
+
+
+
+
+ </script>
+
+            </div>
+            </div>
+            <div class="rightcolumn">
+            <div class="card">
+                <h2>Widget</h2>
+                <div class="fakeimg" style="height:100px">Image</div>
+                <p>I have to go now</p>
+            </div>
+            </div>
+            <div class="footer">
+                <h2>Footer</h2>
+            </div>
+        </div>
+    </body>
+</html>

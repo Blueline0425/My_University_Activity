@@ -1,0 +1,76 @@
+<html>
+ <head>
+ <script>
+  function println(value) {
+
+            if (value != undefined) document.write(value);
+            document.write("<br>");
+
+        }
+</script>
+ </head>
+ <body>
+   <h3>Exercise 10.3.1</h3>
+<a href="http://google.com" name="google">Google</a><br/>
+<a href="http://naver.com" name="naver">Naver</a><br/>
+<a href="http://daum.net">Daum (without a name)</a>
+
+<script>
+  println(document.links.length);
+  println(document.anchors.length);
+  println(document.anchors[0].name);
+  println(document.anchors[0].innerHTML);
+  println(document.links[2].innerHTML);
+  
+</script>
+  <h3>Exercise 10.3.2</h3>
+  <form name="b">Counter:<input type="text"name="a" ></form> 
+  <button id="start"onclick="coun=setInterval('count()',500)">start</button>
+  <button id="stop"onclick="stop()">stop</button>
+ <script>
+   var coun;
+   var x=0;
+   
+   function count(){
+	   var k=document.getElementById('start');
+			  k.disabled = 'disabled';
+	    
+	 
+		document.b.a.value=x;
+		x++;}
+		
+		function stop(){
+			clearInterval(coun);
+            var k=document.getElementById('start');
+			  k.disabled =false;
+		}
+	
+		
+ 
+ </script>
+
+
+
+  <h3>Exercise 10.3.3</h3>
+  <form name="t">Timer:<input type="text" name="te">
+  <br>
+  <input type="button" onclick="x=setInterval('timer()',1000)" value="Start Timer"></form>
+
+<script>
+  var x;
+  var y=0;
+  function timer(){
+	  if(y==5){
+		  document.t.te.value=5+" "+"seconds";
+		clearInterval(x);
+		
+
+	  }
+	  else{
+	document.t.te.value=y+" "+"seconds";
+	y++}
+  }
+</script>
+
+ </body>
+</html>

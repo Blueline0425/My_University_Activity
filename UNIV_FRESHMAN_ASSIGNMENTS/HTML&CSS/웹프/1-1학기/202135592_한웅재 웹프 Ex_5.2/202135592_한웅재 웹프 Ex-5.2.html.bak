@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+     <style type="text/css">
+       
+	   
+	   
+      
+	   #div2 a{
+	         display:block;
+	         } 
+			
+
+
+       #div2 {float:left; }
+      
+	  
+
+
+	 </style>
+</head>
+ <body>
+ 
+  <div id="div2">
+  <img src="css3.jpg" width="90" height="130">
+  <a href="https://www.google.com/" class="link">google</a>
+  <a href="https://www.naver.com/" class="link">naver</a>
+  <a href="https://www.youtube.com/" class="link">youtube</a>
+  
+
+  </div>
+  This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.
+ 
+
+
+ </body>
+</html>

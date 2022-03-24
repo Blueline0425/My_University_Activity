@@ -1,0 +1,27 @@
+<html>
+<form method="get" name="a" >
+   <input type="text" value="zzz"name="ab">
+   <input type="button" value="submit" onclick="abc()">
+</form>
+ㄹㅇㄴㄹㄴㅇㄹ
+</html>
+<script>
+var x=0;
+var y=[];
+ 
+ function abc(){
+
+	y[x]=document.a.ab.value;
+	alert(y[x]);
+	x++;
+	if (x==5)
+	{
+		alert(y[0]);
+		alert(y[1]);
+		alert(y[2]);
+		alert(y[3]);
+		alert(y[4]);
+	}
+
+ }
+</script>

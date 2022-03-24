@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>spec</title>
+ <link rel="stylesheet"type="text/css" href="design.css">
+	  
+	
+
+
+ </head>
+ <body>
+  <div id="top">
+   <img src="samsung.jpg"> <a style="color:blue">SAMSUNG</a> GALAXY S20 VS S21
+  </div>
+  <div id="mid">
+     <div id="left_nav">
+	    ABOUT.
+		<a href="main.html" class="link">What is galaxy <br>S20 and S21?</a>
+		<a href="spec.html" class="link">SPEC</a>
+		<a href="flat vs edge display.html" class="link">FLAT VS EDGE <br>DISPLAY</a>
+		<a href="processor.html" class="link">PROCESSOR</a>
+		<a href="Benchmark.html" class="link">BENCHMARK</a>
+     </div>
+     <div id="content">
+	 <a id="title">Spec</a><br><br>
+	 <!--15x3 표 작성 -->
+	 <table border="1" style="text-align:center">
+	 <caption style="font-size:30px">Comparing</caption>
+        <tr>
+		  <th>Model
+		  </th>
+		  <td>S20
+		  </td>
+		  <td>S21
+		  </td>
+		</tr>
+		<tr>
+		  <td>프로세서
+		  </td>
+		  <td>퀄컴 스냅드래곤 865 SM8250
+		  </td>
+		  <td>삼성 엑시노스 10 Series (2100) SoC.
+		  </td>
+		</tr>
+		<tr>
+		  <td>메모리
+		  </td>
+		  <td>12 GB LPDDR5 SDRAM, 128 GB UFS 3.0 규격 내장 메모리, micro SDXC (규격상 2 TB, 1 TB 공식 지원)
+		  </td>
+		  <td>8 GB LPDDR5 SDRAM, 256 GB UFS 3.1 규격 내장 메모리
+		  </td>
+		</tr>
+		<tr>
+		  <td>디스플레이
+		  </td>
+		  <td>6.2인치 20:9 비율 3200 x 1440 Infinity-O Display (566 ppi) 멀티터치 지원 정전식 터치 스크린, 초음파 방식 지문인식 내장, 플랫 디스플레이
+		  </td>
+		  <td>6.2인치 20:9 비율 2400 x 1080 Infinity-O Display (421 ppi) 멀티터치 지원 정전식 터치 스크린, 초음파 방식 지문인식 내장, 엣지 디스플레이
+		  </td>
+		</tr>
+		<tr>
+		  <td>네트워크
+		  </td>
+		  <td>5G NR, 4G LTE, 3G WCDMA, 2G GSM
+		  </td>
+		  <td>5G NR, 4G LTE, 3G WCDMA, 2G GSM
+		  </td>
+		</tr>
+		<tr>
+		  <td>근접통신
+		  </td>
+		  <td>Wi-Fi 1/2/3/4/5/6, 블루투스 5.0+LE / aptX Codec, NFC, ANT+, MST
+		  </td>
+		  <td>Wi-Fi 1/2/3/4/5/6, 블루투스 5.0 / aptX Codec, NFC, MST
+		  </td>
+		</tr>
+		<tr>
+		  <td>위성항법
+		  </td>
+		  <td>GPS & A-GPS, GLONASS, Galileo, Beidou, QZSS
+		  </td>
+		  <td>GPS & A-GPS, GLONASS, Galileo, Beidou, QZSS
+		  </td>
+		</tr>
+		<tr>
+		  <td>전면카메라
+		  </td>
+		  <td>전면 1,000만 화소 듀얼 픽셀 위상차 검출 AF (F/2.2 & 80°)
+		  </td>
+		  <td>전면 1,000만 화소 듀얼 픽셀 위상차 검출 AF (F/2.2 & 80°)
+		  </td>
+		</tr>
+		<tr>
+		  <td>배터리
+		  </td>
+		  <td>내장형 Li-Ion 4000 mAh
+		  </td>
+		  <td>내장형 Li-Ion 4000 mAh
+		  </td>
+		</tr>
+		<tr>
+		  <td>운영체제
+		  </td>
+		  <td>안드로이드 10 → 11, Samsung One UI 2.1 → 2.5 → 3 → 3.1
+		  </td>
+		  <td>안드로이드 11, Samsung One UI 3.1
+		  </td>
+		</tr>
+		<tr>
+		  <td>규격
+		  </td>
+		  <td>69.1 x 151.7 x 7.9 mm, 163 g
+		  </td>
+		  <td>71.2 × 151.7 × 7.9 mm, 169 g
+		  </td>
+		</tr>
+		<tr>
+		  <td>색상
+		  </td>
+		  <td>코스믹 그레이, 클라우드 블루, 클라우드 핑크, 클라우드 화이트
+		  </td>
+		  <td>팬텀 그레이, 팬텀 핑크, 팬텀 바이올렛, 팬텀 화이트
+		  </td>
+		</tr>
+		<tr>
+		  <td>단자정보
+		  </td>
+		  <td>USB 3.2 Gen1 Type-C x 1 (DisplayPort -.- 지원)
+		  </td>
+		  <td>USB 3.2 Gen1 Type-C x 1 (DisplayPort -.- 지원)
+		  </td>
+		</tr>
+		<tr>
+		  <td>생체인식
+		  </td>
+		  <td>지문인식 - 디스플레이 내장형, 얼굴인식 - 전면 카메라 인식 방식
+		  </td>
+		  <td>지문인식 - 디스플레이 내장형, 얼굴인식 - 전면 카메라 인식 방식
+		  </td>
+		</tr>
+		<tr>
+		  <td>기타
+		  </td>
+		  <td>IP68 등급 방수 방진 지원, AKG 튜닝 및 Dolby Atmos 기술 탑재, FM 라디오 지원
+		  </td>
+		  <td>IP68 등급 방수 방진 지원, AKG 튜닝 및 Dolby Atmos 기술 탑재, FM 라디오 지원
+		  </td>
+		</tr>
+
+
+
+	 </table>
+
+           
+     </div>
+  </div>
+  <div id="bottom">
+    Developer: Gachon Univ. Department of SW, 202135592_ungjae han
+  </div>
