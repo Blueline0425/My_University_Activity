@@ -16,7 +16,7 @@ public class Main
 		    int i,j;
 		    i=scanner.nextInt();
 		    j=scanner.nextInt();
-		    for(int k=0;k<j-i;k++){
+		    for(int k=0;k<(j-i+1)/2;k++){
 		    int tmp;
 		    
 		    tmp = narr[i-1+k];
