@@ -33,19 +33,25 @@ public class Main
 		};
 		
 		for(int i=0;i<n;i++){
-		    String str = scanner.nextLine();
+		    String str = new String();
+		    str = scanner.nextLine();
+		    String[] A = str.split("");
 		    for(int k=0;k<m;k++){
-		        String[] A = str.split("");
 		        if(A[k].equals("W"))//white는 0으로 black은 1로 치환 후 보드판 비교 후 0과 1의 비율이 최대한 높을 때가 최적의 수 
 		            narr[i][k]=0;
 		        else
 		            narr[i][k]=1;
 		    }
 		}
+		
+		
+		
+		
+		
 		int count=0;
-		for(int i=0;i<n-8;i++){//n*m 보드판에서 8*8 chess_w와 chess_b의 0과 1 매칭률 비교 후 매칭률의 최대값을 구하는 식 작성.
-		  //비교횟수는 n-8 * m-8
-		  for(int k=0;k<m-8;k++){
+		for(int i=0;i<n-7;i++){//n*m 보드판에서 8*8 chess_w와 chess_b의 0과 1 매칭률 비교 후 매칭률의 최대값을 구하는 식 작성.
+		  //비교횟수는 n-7 * m-7
+		  for(int k=0;k<m-7;k++){
 		      if(narr[i][k]==0){
 		                    for(int a=0;a<8;a++){//체스판 비교
 		                        for(int l=0;l<8;l++){
